@@ -1,6 +1,7 @@
 #程序媛：JY子
 '''
-一个回合制游戏，每个角色都有hp 和power，
+一个回合制游戏，
+每个角色都有hp 和power，
 hp代表血量，power代表攻击力，hp的初始值为1000，
 power的初始值为200。打斗多个回合
 定义一个fight方法：
@@ -14,10 +15,9 @@ def fight():#定义一个打斗的方法
     empty_hp=1000#敌人的初始血量
     empty_power=200#敌人的初始攻击力
     # 对打多轮，谁的血量先小于等于0，谁就输了
-    while True:
+    while True:#循环语句
         my_hp=my_hp-empty_power#我的血量等于我的血量减去敌人的初始攻击力
         empty_hp=empty_hp-my_power#敌人的血量等于敌人的血量减去我的初始攻击力
-
         if my_hp<=0:#如果我的血量小于0时
             # pycharm 快捷键， ctrl+D 可以复制当前行
             print("我的剩余血量️",my_hp)
