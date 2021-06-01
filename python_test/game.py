@@ -55,10 +55,6 @@ class houyi(Game):
             Houyi.defense()
 
 
-
-
-
-
 #调用fight函数
 game=Game(1300,899)
 game.fight()
